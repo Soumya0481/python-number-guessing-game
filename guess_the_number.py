@@ -1,6 +1,10 @@
 import random
-target=random.randint(1, 100)
 print("Welcome to 'Guess the Number'Gameeeeee!")
+print("I'm thinking of a number between your chosen range.")
+min_val=int(input("Enter the minimum number of the range  "))
+max_val=int(input("Enter the maximum number of the range  "))
+target=random.randint(min_val, max_val)
+
 attempts = 10
 while attempts > 0:
     userguess =input("guess the target number or quit the game Q:\n ")
@@ -22,3 +26,9 @@ while attempts > 0:
         print(f"You have {attempts} attempts left.\n")
  
 print("Game Over.\n")
+
+    else:
+        print(f"You have {attempts} attempts left.\n")
+ 
+print("Game Over.\n")
+
